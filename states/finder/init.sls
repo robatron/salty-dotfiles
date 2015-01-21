@@ -5,8 +5,8 @@ show-hidden-files:
     cmd.run:
         - name: defaults write com.apple.finder AppleShowAllFiles YES
 
-restart-finder:
-    cmd.run:
-        - name: killall Finder
-        - require:
-            - cmd: show-hidden-files
+# restart-finder:
+#     cmd.run:
+#         - name: killall Finder
+#         - require:
+#             - cmd: show-hidden-files

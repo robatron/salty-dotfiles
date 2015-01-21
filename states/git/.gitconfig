@@ -1,0 +1,11 @@
+[user]
+    name = Rob McGuire-Dale
+
+[push]
+    default = current
+
+[pull]
+    default = current
+
+[core]
+    editor = vim
