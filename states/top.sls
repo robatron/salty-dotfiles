@@ -1,6 +1,7 @@
 base:
     # All environments
     '*':
+        - bash
         - vim
         - git
         - node

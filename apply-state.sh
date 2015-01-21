@@ -4,16 +4,22 @@ set -e
 
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
-if [[ -z $1 ]]; then
-    echo 'Error: A username is required, e.g., `./apply-state.sh /home/username`'
-    exit 1
-fi
+HOMEDIR=$HOME
+USERNAME=$( echo "$HOME" | sed "s/.*\///g" )
+
+echo "Running as '$USERNAME' with home directory '$HOMEDIR'..."
 
 salt-call                       \
     --config-dir "$DIR/config/" \
     --local                     \
     --log-level  debug          \
-    grains.setval homedir $1
+    grains.setval username $USERNAME
+
+salt-call                       \
+    --config-dir "$DIR/config/" \
+    --local                     \
+    --log-level  debug          \
+    grains.setval homedir $HOMEDIR
 
 salt-call                       \
     --config-dir "$DIR/config/" \

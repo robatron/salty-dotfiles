@@ -4,5 +4,6 @@ vim:                 # ID declaration
 
 symlink-vim-config:
     file.symlink:
-        - name: {{ salt[ 'grains.get' ]( 'homedir' ) }}/.vimrc
-        - target: {{ salt[ 'grains.get' ]( 'stateroot' ) }}/vim/.vimrc
+        - name:     {{ grains.homedir }}/.vimrc
+        - target:   {{ grains.stateroot }}/vim/.vimrc
+        - user:     {{ grains.username }}

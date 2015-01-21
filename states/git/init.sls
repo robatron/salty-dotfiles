@@ -4,5 +4,5 @@ git:
 
 symlink-git-config:
     file.symlink:
-        - name: {{ salt[ 'grains.get' ]( 'homedir' ) }}/.gitconfig
-        - target: {{ salt[ 'grains.get' ]( 'stateroot' ) }}/git/.gitconfig
+        - name:     {{ grains.homedir }}/.gitconfig
+        - target:   {{ grains.stateroot }}/git/.gitconfig

@@ -1,5 +1,6 @@
 [user]
     name = Rob McGuire-Dale
+	email = rmcguir@rei.com
 
 [push]
     default = current

@@ -1,4 +1,4 @@
 symlink-atom-config:
     file.symlink:
-        - name: {{ salt[ 'grains.get' ]( 'homedir' ) }}/.atom/config.cson
-        - target: {{ salt[ 'grains.get' ]( 'stateroot' ) }}/atom/.atom/config.cson
+        - name:     {{ grains.homedir }}/.atom/config.cson
+        - target:   {{ grains.stateroot }}/atom/.atom/config.cson
