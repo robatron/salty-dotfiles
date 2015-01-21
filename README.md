@@ -10,15 +10,15 @@ The following OSs are supported (so far):
 
 1. Install [Homebrew](http://brew.sh/)
 
-    ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+        ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 2. Update Python and install `pip`
 
-    brew install python
+        brew install python
 
 3. Install [SaltStack](http://docs.saltstack.com/en/latest/) via pip
 
-    sudo pip install salt
+        sudo pip install salt
 
 **Note:** Steps 2 and 3 can be reduced to `brew install saltstack` once
 salt >= v2014.7.1 makes it into the
@@ -28,4 +28,4 @@ salt >= v2014.7.1 makes it into the
 
 1. Run the apply script
 
-    ./apply-state.sh
+        ./apply-state.sh
