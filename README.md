@@ -33,8 +33,8 @@ salt >= v2014.7.1 makes it into the
 
 ## Apply State
 
-1. Run the apply script
+1. Run the apply script as your user, with
 
     ```sh
-    ./apply-state.sh
+    sudo ./apply-state.sh
     ```
