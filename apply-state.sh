@@ -16,19 +16,16 @@ echo "Running as '$USERNAME' with home directory '$HOMEDIR'..."
 salt-call                       \
     --config-dir "$DIR/config/" \
     --local                     \
-    --log-level  debug          \
     grains.setval username $USERNAME
 
 salt-call                       \
     --config-dir "$DIR/config/" \
     --local                     \
-    --log-level  debug          \
     grains.setval homedir $HOMEDIR
 
 salt-call                       \
     --config-dir "$DIR/config/" \
     --local                     \
-    --log-level  debug          \
     grains.setval stateroot $DIR/states
 
 # Apply the high state
@@ -36,5 +33,4 @@ salt-call                       \
     --config-dir "$DIR/config/" \
     --file-root  "$DIR/states/" \
     --local                     \
-    --log-level  debug          \
     state.highstate
