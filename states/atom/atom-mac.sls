@@ -5,4 +5,3 @@ atom-mac:
         - source_hash: md5=3010ee548c94baba56a527b612b18184
         - archive_format: zip
         - if_missing: /Applications/Atom.app
-

@@ -1,10 +1,12 @@
 base:
+    # All environments
     '*':
-        - apps/vim
-        - apps/node
-        - apps/atom
+        - vim
+        - node
+        - atom
 
+    # Mac OS
     'G@os:MacOS':
-        - apps/atom/atom-mac
-        - apps/finder
-        - apps/mac-boot
+        - finder
+        - boot/boot-mac
+        - atom/atom-mac
