@@ -1,7 +1,7 @@
 symlink-bash-config:
     file.symlink:
-        - name:     {{ grains.homedir }}/.bashrc
-        - target:   {{ grains.stateroot }}/bash/.bashrc
+        - name:     {{ grains.homedir }}/.bash_profile
+        - target:   {{ grains.stateroot }}/bash/.bash_profile
         - user:     {{ grains.username }}
 
 symlink-bash-aliases:
