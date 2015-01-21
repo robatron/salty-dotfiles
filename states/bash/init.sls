@@ -2,11 +2,13 @@ symlink-bash-config:
     file.symlink:
         - name:     {{ grains.homedir }}/.bashrc
         - target:   {{ grains.stateroot }}/bash/.bashrc
+        - user:     {{ grains.username }}
 
 symlink-bash-aliases:
     file.symlink:
         - name:     {{ grains.homedir }}/.bash_aliases
         - target:   {{ grains.stateroot }}/bash/.bash_aliases
+        - user:     {{ grains.username }}
 
 install-git-aware-prompt:
     git.latest:
@@ -14,5 +16,6 @@ install-git-aware-prompt:
         - rev:      518685d5d42ab9f298207dd66bbc213775c5cbee
         - target:   {{ grains.homedir }}/.bash/git-aware-prompt/
         - depth:    1
+        - user:     {{ grains.username }}
         - require:
             - pkg: git
