@@ -28,8 +28,16 @@ shopt -s checkwinsize
 # enable programmable completion features (you don't need to enable
 # this, if it's already enabled in /etc/bash.bashrc and /etc/profile
 # sources /etc/bash.bashrc).
-if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
+if [[ -f /etc/bash_completion ]] && ! shopt -oq posix; then
     . /etc/bash_completion
+fi
+
+# Bash-completion for Mac OS X
+BASH_COMPLETE_DIR='/usr/local/etc/bash_completion.d'
+if [[ -d $BASH_COMPLETE_DIR ]]; then
+    for file in $BASH_COMPLETE_DIR/* ; do
+        source "$file"
+    done
 fi
 
 # enable 256-color support in terminal
