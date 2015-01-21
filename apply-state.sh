@@ -1,4 +1,7 @@
 #! /bin/bash
+#
+# Apply the local provision state using a masterless SaltState minion
+#
 
 set -e
 
@@ -9,6 +12,7 @@ USERNAME=$( echo "$HOME" | sed "s/.*\///g" )
 
 echo "Running as '$USERNAME' with home directory '$HOMEDIR'..."
 
+# Set the user, home-directory, and state root
 salt-call                       \
     --config-dir "$DIR/config/" \
     --local                     \
@@ -27,6 +31,7 @@ salt-call                       \
     --log-level  debug          \
     grains.setval stateroot $DIR/states
 
+# Apply the high state
 salt-call                       \
     --config-dir "$DIR/config/" \
     --file-root  "$DIR/states/" \

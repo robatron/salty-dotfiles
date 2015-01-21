@@ -1,6 +1,7 @@
 # salty-dotfiles
 
-> Auto provision my local environments using a masterless [SaltStack](http://docs.saltstack.com/en/latest/)
+> Auto provision my personal environments using a masterless
+> [SaltStack](http://docs.saltstack.com/en/latest/) minion
 
 The following OSs are supported (so far):
 
