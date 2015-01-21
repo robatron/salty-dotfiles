@@ -2,13 +2,11 @@
 
 > Auto provision my local environments using a masterless [SaltStack](http://docs.saltstack.com/en/latest/)
 
-## Supported Environments
+The following OSs are supported (so far):
 
 - Mac OS X
 
 ## Installation
-
-### Mac OS X
 
 1. Install [Homebrew](http://brew.sh/)
 
@@ -27,8 +25,6 @@ salt >= v2014.7.1 makes it into the
 [brew index](http://braumeister.org/formula/saltstack)
 
 ## Apply State
-
-### Mac OS X
 
 1. Run the apply script
 
