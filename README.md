@@ -9,6 +9,12 @@ The following OSs are supported (so far):
 
 ## Installation
 
+    ```sh
+    curl https://raw.githubusercontent.com/robatron/salty-dotfiles/master/install.sh | bash
+    ```
+
+### Manual
+
 1. Install [Homebrew](http://brew.sh/)
 
     ```sh
