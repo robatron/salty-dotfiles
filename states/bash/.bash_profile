@@ -56,6 +56,17 @@ export EDITOR='vim'
 
 # Aliases
 # -------
+alias ll='ls -lahF'
+alias la='ls -A'
+alias l='ls -CF'
+
+alias ga="git add"
+alias gc="git commit"
+alias gs="git status"
+alias gd="git diff"
+alias gp="git push"
+alias gb="git branch"
+alias gl="git log"
 
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
