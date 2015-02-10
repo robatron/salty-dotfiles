@@ -9,13 +9,7 @@ The following OSs are supported (so far):
 
 ## Installation
 
-```sh
-curl https://raw.githubusercontent.com/robatron/salty-dotfiles/master/install.sh | bash
-```
-
-### Manual
-
-The installation script above performs the following tasks:
+### Mac OS X
 
 1. Install [Homebrew](http://brew.sh/):
 
