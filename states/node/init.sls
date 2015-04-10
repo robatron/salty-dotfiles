@@ -1,3 +1,2 @@
 node:
-  pkg:
-    - installed
+    pkg.installed

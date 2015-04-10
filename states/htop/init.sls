@@ -1,3 +1,2 @@
 htop:
-    pkg:
-        - installed
+    pkg.installed
