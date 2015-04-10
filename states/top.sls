@@ -12,4 +12,3 @@ base:
     'G@os:MacOS':
         - finder
         - boot/boot-mac
-        - atom/atom-mac
