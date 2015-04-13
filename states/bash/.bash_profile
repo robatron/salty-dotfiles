@@ -49,6 +49,10 @@ alias grep='grep --color'
 alias fgrep='fgrep --color'
 alias egrep='egrep --color'
 
+
+# Load RVM into the shell session if RVM is installed
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
+
 # Environment
 # -----------
 
@@ -75,3 +79,4 @@ alias gl="git log"
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+
