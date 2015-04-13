@@ -1,3 +1,0 @@
-htop:
-    pkg:
-        - installed

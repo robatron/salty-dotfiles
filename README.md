@@ -9,27 +9,19 @@ The following OSs are supported (so far):
 
 ## Installation
 
-1. Install [Homebrew](http://brew.sh/)
+### Mac OS X
+
+1. Install [Homebrew](http://brew.sh/):
 
     ```sh
     ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
     ```
 
-2. Update Python and install `pip`
+2. Install Salt:
 
     ```sh
-    brew install python
+    brew install saltstack
     ```
-
-3. Install [SaltStack](http://docs.saltstack.com/en/latest/) via `pip`
-
-    ```sh
-    sudo pip install salt
-    ```
-
-**Note:** Steps 2 and 3 can be reduced to `brew install saltstack` once
-salt >= v2014.7.1 makes it into the
-[brew index](http://braumeister.org/formula/saltstack)
 
 ## Apply State
 
