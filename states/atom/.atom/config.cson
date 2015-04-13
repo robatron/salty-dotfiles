@@ -1,6 +1,6 @@
 "*":
   editor:
-    fontSize: 14
+    fontSize: 12
     showInvisibles: true
     showIndentGuide: true
     tabLength: 4
@@ -10,7 +10,14 @@
       "atom-dark-ui"
       "atom-dark-syntax"
     ]
+    disabledPackages: [
+      "gulp-helper"
+    ]
   "exception-reporting":
     userId: "0fa89441-37fe-d294-e5b0-126682b1a132"
   welcome:
     showOnStartup: false
+  "tree-view":
+    hideVcsIgnoredFiles: true
+  jshint:
+    validateOnlyOnSave: true
