@@ -50,27 +50,10 @@ alias fgrep='fgrep --color'
 alias egrep='egrep --color'
 
 
-# Load RVM into the shell session if RVM is installed
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" 
-
 # Environment
 # -----------
 
 export EDITOR='vim'
-
-# Aliases
-# -------
-alias ll='ls -lahF'
-alias la='ls -A'
-alias l='ls -CF'
-
-alias ga="git add"
-alias gc="git commit"
-alias gs="git status"
-alias gd="git diff"
-alias gp="git push"
-alias gb="git branch"
-alias gl="git log"
 
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -80,3 +63,5 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+# Load RVM into the shell session as a function if RVM is installed
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
