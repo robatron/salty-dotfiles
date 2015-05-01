@@ -65,3 +65,8 @@ fi
 
 # Load RVM into the shell session as a function if RVM is installed
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+
+# Load additional, local configs if present
+if [ -f ~/.bash_profile_local ]; then
+    . ~/.bash_profile_local
+fi
