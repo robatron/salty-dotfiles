@@ -49,13 +49,11 @@ alias grep='grep --color'
 alias fgrep='fgrep --color'
 alias egrep='egrep --color'
 
+
 # Environment
 # -----------
 
 export EDITOR='vim'
-
-# Aliases
-# -------
 
 # You may want to put all your additions into a separate file like
 # ~/.bash_aliases, instead of adding them here directly.
@@ -64,3 +62,6 @@ export EDITOR='vim'
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+
+# Load RVM into the shell session as a function if RVM is installed
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"

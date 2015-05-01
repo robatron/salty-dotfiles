@@ -17,5 +17,3 @@ install-git-aware-prompt:
         - target:   {{ grains.homedir }}/.bash/git-aware-prompt/
         - depth:    1
         - user:     {{ grains.username }}
-        - require:
-            - pkg: git
