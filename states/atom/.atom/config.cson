@@ -1,6 +1,6 @@
 "*":
   editor:
-    fontSize: 14
+    fontSize: 12
     showInvisibles: true
     showIndentGuide: true
     tabLength: 4
