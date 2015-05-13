@@ -70,3 +70,6 @@ fi
 if [ -f ~/.bash_profile_local ]; then
     . ~/.bash_profile_local
 fi
+
+# Set the Node REPL history path (io.js)
+export NODE_REPL_HISTORY_FILE="$HOME/.history-node-repl"
