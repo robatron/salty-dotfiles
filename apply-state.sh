@@ -5,11 +5,6 @@
 
 set -e
 
-if [[ "$(whoami)" != "root" ]]; then
-    echo "You need to be root, yo"
-    exit 1
-fi
-
 DIR=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )
 
 HOMEDIR=$HOME
